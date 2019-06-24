@@ -20,7 +20,7 @@ var SubtitlesOctopus = function (options) {
     if (typeof ImageData.prototype.constructor !== 'function') {
         (function () {
             var canvas = document.createElement('canvas');
-            var ctx = canvas.getContext('2d');
+            var ctx = canvas.getContext('2d', { alpha: false });
 
             window.ImageData = function () {
                 var i = 0;
