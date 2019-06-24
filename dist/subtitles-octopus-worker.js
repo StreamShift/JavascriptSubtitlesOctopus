@@ -1491,7 +1491,7 @@ var Browser = {
                 }
             }
         } else {
-            ctx = canvas.getContext("2d")
+            ctx = canvas.getContext("2d", { alpha: false })
         }
         if (!ctx)
             return null;
